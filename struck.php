@@ -16,7 +16,7 @@
 
         switch($type) {
             case "Ps 3":
-                if($duration > 7) {
+                if($duration >= 7) {
                     $duration /= 7;
                     $tagihan = (int) round((39900 * $duration), 0);
                 } else {
@@ -24,7 +24,7 @@
                 }
                 break;
             case "Ps 4":
-                if($duration > 7) {
+                if($duration >= 7) {
                     $duration /= 7;
                     $tagihan = (int) round((64900 * $duration), 0);
                 } else {
@@ -32,7 +32,7 @@
                 }
                 break;
             case "Ps 5":
-                if($duration > 7) {
+                if($duration >= 7) {
                     $duration /= 7;
                     $tagihan = (int) round((79900 * $duration), 0);
                 } else {
@@ -40,7 +40,7 @@
                 }
                 break;
             case "Xbox One":
-                if($duration > 7) {
+                if($duration >= 7) {
                     $duration /= 7;
                     $tagihan = (int) round((59900 * $duration), 0);
                 } else {
@@ -48,7 +48,7 @@
                 }
                 break;
             case "Xbox One X":
-                if($duration > 7) {
+                if($duration >= 7) {
                     $duration /= 7;
                     $tagihan = (int) round((69900 * $duration), 0);
                 } else {
